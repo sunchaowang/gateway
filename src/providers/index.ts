@@ -1,12 +1,12 @@
-import AnthropicConfig from "./anthropic";
-import AnyscaleConfig from "./anyscale";
-import AzureOpenAIConfig from "./azure-openai";
-import CohereConfig from "./cohere";
-import GoogleConfig from "./google";
-import OpenAIConfig from "./openai";
-import PalmAIConfig from "./palm";
-import TogetherAIConfig from "./together-ai";
-import { ProviderConfigs } from "./types";
+import AnthropicConfig from "./anthropic/index.js";
+import AnyscaleConfig from "./anyscale/index.js";
+import AzureOpenAIConfig from "./azure-openai/index.js";
+import CohereConfig from "./cohere/index.js";
+import GoogleConfig from "./google/index.js";
+import OpenAIConfig from "./openai/index.js";
+import PalmAIConfig from "./palm/index.js";
+import TogetherAIConfig from "./together-ai/index.js";
+import { ProviderConfigs } from "./types.js";
 
 const Providers: { [key: string]: ProviderConfigs } = {
   openai: OpenAIConfig,

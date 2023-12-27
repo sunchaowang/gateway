@@ -1,5 +1,5 @@
-import { CompletionResponse, ErrorResponse, ProviderConfig } from "../types";
-import { AnyscaleStreamChunk } from "./chatComplete";
+import { CompletionResponse, ErrorResponse, ProviderConfig } from "../types.js";
+import { AnyscaleStreamChunk } from "./chatComplete.js";
 
 export const AnyscaleCompleteConfig: ProviderConfig = {
   model: {

@@ -1,4 +1,4 @@
-import { CompletionResponse, ErrorResponse, ProviderConfig } from "../types";
+import { CompletionResponse, ErrorResponse, ProviderConfig } from "../types.js";
 
 export const TogetherAICompleteConfig: ProviderConfig = {
   model: {

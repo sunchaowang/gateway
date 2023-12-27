@@ -1,4 +1,4 @@
-import { constructConfigFromRequestHeaders, tryTargetsRecursively } from "./handlerUtils";
+import { constructConfigFromRequestHeaders, tryTargetsRecursively } from "./handlerUtils.js";
 import { Context } from "hono";
 
 /**

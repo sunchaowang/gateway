@@ -1,8 +1,8 @@
-import { ProviderConfigs } from "../types";
-import CohereAPIConfig from "./api";
-import { CohereChatCompleteConfig, CohereChatCompleteResponseTransform, CohereChatCompleteStreamChunkTransform } from "./chatComplete";
-import {CohereCompleteConfig, CohereCompleteResponseTransform, CohereCompleteStreamChunkTransform} from "./complete";
-import { CohereEmbedConfig, CohereEmbedResponseTransform } from "./embed";
+import { ProviderConfigs } from "../types.js";
+import CohereAPIConfig from "./api.js";
+import { CohereChatCompleteConfig, CohereChatCompleteResponseTransform, CohereChatCompleteStreamChunkTransform } from "./chatComplete.js";
+import {CohereCompleteConfig, CohereCompleteResponseTransform, CohereCompleteStreamChunkTransform} from "./complete.js";
+import { CohereEmbedConfig, CohereEmbedResponseTransform } from "./embed.js";
 
 const CohereConfig: ProviderConfigs = {
   complete: CohereCompleteConfig,

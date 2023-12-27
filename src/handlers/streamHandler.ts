@@ -1,5 +1,5 @@
-import { AZURE_OPEN_AI, GOOGLE } from "../globals";
-import { getStreamModeSplitPattern } from "../utils";
+import { AZURE_OPEN_AI, GOOGLE } from "../globals.js";
+import { getStreamModeSplitPattern } from "../utils.js";
 
 export async function* readStream(reader: ReadableStreamDefaultReader, splitPattern: string, transformFunction: Function | undefined, isSleepTimeRequired: boolean, fallbackChunkId: string) {
     let buffer = '';

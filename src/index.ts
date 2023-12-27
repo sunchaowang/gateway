@@ -9,15 +9,15 @@ import { prettyJSON } from "hono/pretty-json";
 import { HTTPException } from 'hono/http-exception'
 // import { env } from 'hono/adapter' // Have to set this up for multi-environment deployment
 
-import { completeHandler } from "./handlers/completeHandler";
-import { chatCompleteHandler } from "./handlers/chatCompleteHandler";
-import { embedHandler } from "./handlers/embedHandler";
-import { proxyHandler } from "./handlers/proxyHandler";
-import { proxyGetHandler } from "./handlers/proxyGetHandler";
-import { chatCompletionsHandler } from "./handlers/chatCompletionsHandler";
-import { completionsHandler } from "./handlers/completionsHandler";
-import { embeddingsHandler } from "./handlers/embeddingsHandler";
-import { requestValidator } from "./middlewares/requestValidator";
+import { completeHandler } from "./handlers/completeHandler.js";
+import { chatCompleteHandler } from "./handlers/chatCompleteHandler.js";
+import { embedHandler } from "./handlers/embedHandler.js";
+import { proxyHandler } from "./handlers/proxyHandler.js";
+import { proxyGetHandler } from "./handlers/proxyGetHandler.js";
+import { chatCompletionsHandler } from "./handlers/chatCompletionsHandler.js";
+import { completionsHandler } from "./handlers/completionsHandler.js";
+import { embeddingsHandler } from "./handlers/embeddingsHandler.js";
+import { requestValidator } from "./middlewares/requestValidator/index.js";
 
 // Create a new Hono server instance
 const app = new Hono();
@@ -26,7 +26,7 @@ const app = new Hono();
  * GET route for the root path.
  * Returns a greeting message.
  */
-app.get("/", (c) => c.text("Rubeus says hey!"));
+app.get("/", (c) => c.text("Rubeus says hey! Read the docs on https://rubeus.dev"));
 
 // Use prettyJSON middleware for all routes
 app.use("*", prettyJSON());

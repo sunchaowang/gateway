@@ -1,8 +1,8 @@
 import { Context, HonoRequest } from "hono";
-import { retryRequest } from "./retryHandler";
-import Providers from "../providers";
-import { ANTHROPIC, MAX_RETRIES, HEADER_KEYS, RETRY_STATUS_CODES, POWERED_BY, RESPONSE_HEADER_KEYS, AZURE_OPEN_AI } from "../globals";
-import { responseHandler, updateResponseHeaders } from "./handlerUtils";
+import { retryRequest } from "./retryHandler.js";
+import Providers from "../providers/index.js";
+import { ANTHROPIC, MAX_RETRIES, HEADER_KEYS, RETRY_STATUS_CODES, POWERED_BY, RESPONSE_HEADER_KEYS, AZURE_OPEN_AI } from "../globals.js";
+import { responseHandler, updateResponseHeaders } from "./handlerUtils.js";
 
 // Find the proxy provider
 function proxyProvider(proxyModeHeader:string, providerHeader: string) {

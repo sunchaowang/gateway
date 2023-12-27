@@ -1,5 +1,5 @@
-import { ANTHROPIC, COHERE, GOOGLE } from "./globals";
-import { Params } from "./types/requestBody";
+import { ANTHROPIC, COHERE, GOOGLE } from "./globals.js";
+import { Params } from "./types/requestBody.js";
 
 export const getStreamModeSplitPattern = (proxyProvider: string, requestURL: string) => {
     let splitPattern = '\n\n';

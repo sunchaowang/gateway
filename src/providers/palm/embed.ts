@@ -1,5 +1,5 @@
-import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody";
-import { ProviderConfig } from "../types";
+import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody.js";
+import { ProviderConfig } from "../types.js";
 
 export const PalmEmbedConfig: ProviderConfig = {
     input: {

@@ -1,10 +1,10 @@
 import { Context } from "hono";
-import { retryRequest } from "./retryHandler";
-import Providers from "../providers";
-import { ANTHROPIC, MAX_RETRIES, HEADER_KEYS, RETRY_STATUS_CODES, POWERED_BY, RESPONSE_HEADER_KEYS, AZURE_OPEN_AI, CONTENT_TYPES } from "../globals";
-import { fetchProviderOptionsFromConfig, responseHandler, tryProvidersInSequence, updateResponseHeaders } from "./handlerUtils";
-import { getStreamingMode } from "../utils";
-import { Config, ShortConfig } from "../types/requestBody";
+import { retryRequest } from "./retryHandler.js";
+import Providers from "../providers/index.js";
+import { ANTHROPIC, MAX_RETRIES, HEADER_KEYS, RETRY_STATUS_CODES, POWERED_BY, RESPONSE_HEADER_KEYS, AZURE_OPEN_AI, CONTENT_TYPES } from "../globals.js";
+import { fetchProviderOptionsFromConfig, responseHandler, tryProvidersInSequence, updateResponseHeaders } from "./handlerUtils.js";
+import { getStreamingMode } from "../utils.js";
+import { Config, ShortConfig } from "../types/requestBody.js";
 
 // Find the proxy provider
 function proxyProvider(proxyModeHeader:string, providerHeader: string) {

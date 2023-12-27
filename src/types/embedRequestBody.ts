@@ -1,6 +1,6 @@
 
-import { BaseResponse } from "../providers/types";
-import { Options } from "./requestBody";
+import { BaseResponse } from "../providers/types.js";
+import { Options } from "./requestBody.js";
 
 export interface EmbedParams {
     model: string;  // The model name to be used as the embedding model

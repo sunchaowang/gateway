@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 const OpenAIAPIConfig: ProviderAPIConfig = {
   baseURL: "https://api.openai.com/v1",

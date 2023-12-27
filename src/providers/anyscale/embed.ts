@@ -1,5 +1,5 @@
-import { EmbedResponse } from "../../types/embedRequestBody";
-import { ErrorResponse, ProviderConfig } from "../types";
+import { EmbedResponse } from "../../types/embedRequestBody.js";
+import { ErrorResponse, ProviderConfig } from "../types.js";
 
 export const AnyscaleEmbedConfig: ProviderConfig = {
   model: {

@@ -10,8 +10,8 @@ import {
     PALM,
     POWERED_BY,
     TOGETHER_AI,
-} from "../../globals";
-import { configSchema } from "./schema/config";
+} from "../../globals.js";
+import { configSchema } from "./schema/config.js";
 
 export const requestValidator = (c: Context, next: any) => {
     const requestHeaders = Object.fromEntries(c.req.headers);

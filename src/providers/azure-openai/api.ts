@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 const AzureOpenAIAPIConfig: ProviderAPIConfig = {
   getBaseURL: (RESOURCE_NAME:string, DEPLOYMENT_ID:string) => `https://${RESOURCE_NAME}.openai.azure.com/openai/deployments/${DEPLOYMENT_ID}`,

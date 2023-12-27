@@ -1,5 +1,5 @@
-import { Targets } from "../types/requestBody";
-import { fetchProviderOptionsFromConfig, getProviderOptionsByMode, tryProvidersInSequence } from "./handlerUtils";
+import { Targets } from "../types/requestBody.js";
+import { fetchProviderOptionsFromConfig, getProviderOptionsByMode, tryProvidersInSequence } from "./handlerUtils.js";
 import { Context } from "hono";
 
 /**

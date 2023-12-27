@@ -1,7 +1,7 @@
-import { ProviderConfigs } from "../types";
-import TogetherAIApiConfig from "./api";
-import {TogetherAIChatCompleteConfig, TogetherAIChatCompleteResponseTransform, TogetherAIChatCompleteStreamChunkTransform } from "./chatComplete";
-import { TogetherAICompleteConfig, TogetherAICompleteResponseTransform, TogetherAICompleteStreamChunkTransform } from "./complete";
+import { ProviderConfigs } from "../types.js";
+import TogetherAIApiConfig from "./api.js";
+import {TogetherAIChatCompleteConfig, TogetherAIChatCompleteResponseTransform, TogetherAIChatCompleteStreamChunkTransform } from "./chatComplete.js";
+import { TogetherAICompleteConfig, TogetherAICompleteResponseTransform, TogetherAICompleteStreamChunkTransform } from "./complete.js";
 
 const TogetherAIConfig: ProviderConfigs = {
   complete: TogetherAICompleteConfig,

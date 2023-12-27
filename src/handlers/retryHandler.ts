@@ -27,7 +27,7 @@ export const retryRequest = async (
     await retry(
       async (bail: any, attempt: number) => {
         try {
-          const response: Response = await fetch(url, options);
+          const response: any = await fetch(url, options);
           if (statusCodesToRetry.includes(response.status)) {
             const errorObj: any = new Error(await response.text());
             errorObj.status = response.status;

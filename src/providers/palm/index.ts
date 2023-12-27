@@ -1,8 +1,8 @@
-import { ProviderConfigs } from "../types";
-import PalmApiConfig from "./api";
-import { PalmChatCompleteConfig, PalmChatCompleteResponseTransform } from "./chatComplete";
-import { PalmCompleteConfig, PalmCompleteResponseTransform } from "./complete";
-import { PalmEmbedConfig, PalmEmbedResponseTransform } from "./embed";
+import { ProviderConfigs } from "../types.js";
+import PalmApiConfig from "./api.js";
+import { PalmChatCompleteConfig, PalmChatCompleteResponseTransform } from "./chatComplete.js";
+import { PalmCompleteConfig, PalmCompleteResponseTransform } from "./complete.js";
+import { PalmEmbedConfig, PalmEmbedResponseTransform } from "./embed.js";
 
 const PalmAIConfig: ProviderConfigs = {
   complete: PalmCompleteConfig,

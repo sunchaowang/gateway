@@ -7,7 +7,7 @@ import {
     GOOGLE,
     OPEN_AI,
     TOGETHER_AI,
-} from "../../../globals";
+} from "../../../globals.js";
 
 export const configSchema: any = z
     .object({

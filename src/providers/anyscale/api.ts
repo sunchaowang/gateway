@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 const AnyscaleAPIConfig: ProviderAPIConfig = {
   baseURL: "https://api.endpoints.anyscale.com/v1",

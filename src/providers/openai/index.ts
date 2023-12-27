@@ -1,8 +1,8 @@
-import { ProviderConfigs } from "../types";
-import { OpenAICompleteConfig, OpenAICompleteResponseTransform } from "./complete";
-import { OpenAIEmbedConfig, OpenAIEmbedResponseTransform } from "./embed";
-import OpenAIAPIConfig from "./api";
-import { OpenAIChatCompleteConfig, OpenAIChatCompleteResponseTransform } from "./chatComplete";
+import { ProviderConfigs } from "../types.js";
+import { OpenAICompleteConfig, OpenAICompleteResponseTransform } from "./complete.js";
+import { OpenAIEmbedConfig, OpenAIEmbedResponseTransform } from "./embed.js";
+import OpenAIAPIConfig from "./api.js";
+import { OpenAIChatCompleteConfig, OpenAIChatCompleteResponseTransform } from "./chatComplete.js";
 
 const OpenAIConfig: ProviderConfigs = {
   complete: OpenAICompleteConfig,

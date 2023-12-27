@@ -1,4 +1,4 @@
-import { Message } from "../types/requestBody";
+import { Message } from "../types/requestBody.js";
 
 /**
  * Configuration for a parameter.

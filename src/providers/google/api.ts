@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 export const GoogleApiConfig: ProviderAPIConfig = {
     baseURL: "https://generativelanguage.googleapis.com/v1beta",

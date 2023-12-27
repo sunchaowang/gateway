@@ -1,11 +1,11 @@
-import { ProviderConfigs } from "../types";
-import GoogleApiConfig from "./api";
+import { ProviderConfigs } from "../types.js";
+import GoogleApiConfig from "./api.js";
 import {
     GoogleChatCompleteConfig,
     GoogleChatCompleteResponseTransform,
     GoogleChatCompleteStreamChunkTransform,
-} from "./chatComplete";
-import { GoogleEmbedConfig, GoogleEmbedResponseTransform } from "./embed";
+} from "./chatComplete.js";
+import { GoogleEmbedConfig, GoogleEmbedResponseTransform } from "./embed.js";
 
 const GoogleConfig: ProviderConfigs = {
     api: GoogleApiConfig,

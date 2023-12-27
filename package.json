@@ -1,8 +1,31 @@
 {
+  "name": "rubeus",
+  "version": "1.0.1",
+  "description": "A fast AI gateway by Portkey",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Portkey-AI/Rubeus.git"
+  },
+  "keywords": [
+    "AI gateway",
+    "Rubeus",
+    "Portkey",
+    "Portkey AI"
+  ],
+  "author": "portkey-ai <support@portkey.ai>",
+  "license": "MIT",
+  "files": [
+    "build",
+    "README.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
-    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "async-retry": "^1.3.3",
@@ -14,5 +37,7 @@
     "@cloudflare/workers-types": "^4.20230518.0",
     "@types/async-retry": "^1.4.5",
     "wrangler": "^3.0.1"
-  }
+  },
+  "bin": "build/start-server.js",
+  "type": "module"
 }

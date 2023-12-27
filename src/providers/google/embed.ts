@@ -1,7 +1,7 @@
-import { ErrorResponse, ProviderConfig } from "../types";
-import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody";
-import { GOOGLE } from "../../globals";
-import { GoogleErrorResponse } from "./chatComplete";
+import { ErrorResponse, ProviderConfig } from "../types.js";
+import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody.js";
+import { GOOGLE } from "../../globals.js";
+import { GoogleErrorResponse } from "./chatComplete.js";
 
 export const GoogleEmbedConfig: ProviderConfig = {
     input: {

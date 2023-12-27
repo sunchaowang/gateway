@@ -1,5 +1,5 @@
-import { ErrorResponse, ProviderConfig } from "../types";
-import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody";
+import { ErrorResponse, ProviderConfig } from "../types.js";
+import { EmbedParams, EmbedResponse } from "../../types/embedRequestBody.js";
 
 export const CohereEmbedConfig: ProviderConfig = {
   input: {

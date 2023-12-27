@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 const AnthropicAPIConfig: ProviderAPIConfig = {
   baseURL: "https://api.anthropic.com/v1",

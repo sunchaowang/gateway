@@ -1,8 +1,8 @@
-import { ProviderConfigs } from "../types";
-import AnyscaleAPIConfig from "./api";
-import { AnyscaleChatCompleteConfig, AnyscaleChatCompleteResponseTransform, AnyscaleChatCompleteStreamChunkTransform } from "./chatComplete";
-import { AnyscaleCompleteConfig, AnyscaleCompleteResponseTransform, AnyscaleCompleteStreamChunkTransform } from "./complete";
-import { AnyscaleEmbedConfig, AnyscaleEmbedResponseTransform } from "./embed";
+import { ProviderConfigs } from "../types.js";
+import AnyscaleAPIConfig from "./api.js";
+import { AnyscaleChatCompleteConfig, AnyscaleChatCompleteResponseTransform, AnyscaleChatCompleteStreamChunkTransform } from "./chatComplete.js";
+import { AnyscaleCompleteConfig, AnyscaleCompleteResponseTransform, AnyscaleCompleteStreamChunkTransform } from "./complete.js";
+import { AnyscaleEmbedConfig, AnyscaleEmbedResponseTransform } from "./embed.js";
 
 const AnyscaleConfig: ProviderConfigs = {
   complete: AnyscaleCompleteConfig,

@@ -1,12 +1,12 @@
 import { Context } from "hono";
-import { AZURE_OPEN_AI, GOOGLE, HEADER_KEYS, PALM, POWERED_BY, RESPONSE_HEADER_KEYS, RETRY_STATUS_CODES } from "../globals";
-import Providers from "../providers";
-import { ProviderAPIConfig, endpointStrings } from "../providers/types";
-import transformToProviderRequest from "../services/transformToProviderRequest";
-import { Config, Options, Params, RequestBody, ShortConfig, Targets } from "../types/requestBody";
-import { convertKeysToCamelCase } from "../utils";
-import { retryRequest } from "./retryHandler";
-import { handleAudioResponse, handleNonStreamingMode, handleOctetStreamResponse, handleStreamingMode } from "./streamHandler";
+import { AZURE_OPEN_AI, GOOGLE, HEADER_KEYS, PALM, POWERED_BY, RESPONSE_HEADER_KEYS, RETRY_STATUS_CODES } from "../globals.js";
+import Providers from "../providers/index.js";
+import { ProviderAPIConfig, endpointStrings } from "../providers/types.js";
+import transformToProviderRequest from "../services/transformToProviderRequest.js";
+import { Config, Options, Params, RequestBody, ShortConfig, Targets } from "../types/requestBody.js";
+import { convertKeysToCamelCase } from "../utils.js";
+import { retryRequest } from "./retryHandler.js";
+import { handleAudioResponse, handleNonStreamingMode, handleOctetStreamResponse, handleStreamingMode } from "./streamHandler.js";
 
 /**
  * Constructs the request options for the API call.

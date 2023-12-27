@@ -1,5 +1,5 @@
-import ProviderConfigs from "../providers";
-import { Params } from "../types/requestBody";
+import ProviderConfigs from "../providers/index.js";
+import { Params } from "../types/requestBody.js";
 
 /**
  * Helper function to set a nested property in an object.

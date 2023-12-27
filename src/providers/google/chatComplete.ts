@@ -1,10 +1,10 @@
-import { GOOGLE } from "../../globals";
-import { ContentType, Message, Params } from "../../types/requestBody";
+import { GOOGLE } from "../../globals.js";
+import { ContentType, Message, Params } from "../../types/requestBody.js";
 import {
     ChatCompletionResponse,
     ErrorResponse,
     ProviderConfig,
-} from "../types";
+} from "../types.js";
 
 const transformGenerationConfig = (params: Params) => {
     const generationConfig: Record<string, any> = {};

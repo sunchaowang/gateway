@@ -1,4 +1,4 @@
-import { ProviderAPIConfig } from "../types";
+import { ProviderAPIConfig } from "../types.js";
 
 const CohereAPIConfig: ProviderAPIConfig = {
   baseURL: "https://api.cohere.ai/v1",
