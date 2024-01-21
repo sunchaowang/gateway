@@ -3,5 +3,8 @@ services:
   web:
     ports:
       - "8787:8787"
-    image: "portkeyai/gateway:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "portkeyai-gateway"
     restart: always

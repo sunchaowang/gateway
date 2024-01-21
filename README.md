@@ -37,9 +37,9 @@ Let's try making a **chat completions** call to OpenAI through the AI gateway:
 ```bash
 curl '127.0.0.1:8787/v1/chat/completions' \
   -H 'x-portkey-provider: openai' \
-  -H "Authorization: Bearer $OPENAI_KEY" \
+  -H "Authorization: Bearer sk-jqyD1NuCToussxrZ450f239a97224d94A8B0CaBf4b22513b" \
   -H 'Content-Type: application/json' \
-  -d '{"messages": [{"role": "user","content": "Say this is test."}], "max_tokens": 20, "model": "gpt-4"}'
+  -d '{"messages": [{"role": "user","content": "Say this is test."}], "max_tokens": 20, "model": "gpt-3.5-turbo"}'
 ```
 [Full list of supported SDKs](#supported-sdks)
 
