@@ -41,7 +41,7 @@ export const OpenAIChatCompleteConfig: ProviderConfig = {
   },
   stream: {
     param: "stream",
-    default: false,
+    default: true,
   },
   stop: {
     param: "stop",

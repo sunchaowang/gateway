@@ -35,7 +35,7 @@ export const OpenAICompleteConfig: ProviderConfig = {
   },
   stream: {
     param: "stream",
-    default: false,
+    default: true,
   },
   logprobs: {
     param: "logprobs",
